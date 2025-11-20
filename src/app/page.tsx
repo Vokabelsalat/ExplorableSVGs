@@ -22,7 +22,7 @@ const paintings = [
   { key: "young", svgFile: "/images/new/Young Steen-1.svg" },
   { key: "transport", svgFile: "/images/new/Transport scene-1.svg" },
   { key: "soccer", svgFile: "/images/new/Soccer scene-1.svg" },
-  { key: "whitebusses", svgFile: "/images/new/White Buses scene-1.svg" },
+  { key: "whitebus", svgFile: "/images/new/White Buses scene-1.svg" },
 ];
 
 export interface StoryEntry {
@@ -72,6 +72,8 @@ function MainMenu() {
         title: "Please add title.",
         text: "Please add text.",
         subtitle: "Please add subtitle.",
+        location: "Please add location.",
+        time: "Please add time.",
       };
     }
   }, [painting, selectedGroup, storyData]);
@@ -109,23 +111,25 @@ function MainMenu() {
             {storyData != null && (
               <div className="size-full text-gray-950 relative">
                 <div className="size-full overflow-hidden overflow-y-scroll flex items-center">
-                  <div className="size-full flex gap-4 flex-col p-3 px-6 justify-center">
+                  <div className="size-full flex gap-2 flex-col p-3 px-6 justify-center">
                     <div className={`text-xl ${noto_serif.className}`}>
-                      {story.title.split("\n").map((e) => (
-                        <div>{e}</div>
-                      ))}
+                      {story.title
+                        ? story.title.split("\n").map((e) => <div>{e}</div>)
+                        : "Please add title."}
                     </div>
-                    <div
-                      className={`text-2xl mt-[-10px] ${reenie_beanie.className}`}
-                    >
-                      {story.subtitle.split("\n").map((e) => (
-                        <div>{e}</div>
-                      ))}
+                    <div className={`text-2xl ${reenie_beanie.className}`}>
+                      {story.subtitle
+                        ? story.subtitle.split("\n").map((e) => <div>{e}</div>)
+                        : "Please add subtitle."}
                     </div>
-                    <div className="text-sm flex gap-2 flex-col">
-                      {story.text.split("\n").map((e) => (
-                        <div>{e}</div>
-                      ))}
+                    <div className="text-xs opacity-75 flex flex-col gap-1">
+                      <p>{story.time}</p>
+                      <p>{story.location}</p>
+                    </div>
+                    <div className="text-sm flex gap-1 flex-col">
+                      {story.text
+                        ? story.text.split("\n").map((e) => <p>{e}</p>)
+                        : "Please add text."}
                     </div>
                     {/* <div className="grid grid-cols-[auto_auto] items-center justify-center gap-2">
                     <CursorArrowRaysIcon
@@ -169,7 +173,9 @@ function MainMenu() {
       </div>
 
       <div className="size-full">
-        <PaintingTimeline paintings={paintings} />
+        {storyData && (
+          <PaintingTimeline paintings={paintings} storyData={storyData} />
+        )}
       </div>
     </div>
   );

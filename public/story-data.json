@@ -6,6 +6,13 @@
         "location": "Odense, Denmark",
         "time": "1943"
     },
+    "transport": {
+        "title": null,
+        "subtitle": null,
+        "text": null,
+        "location": "Theresienstadt, Czechoslovakia",
+        "time": "2 October 1943"
+    },
     "cattlecar_x5F_group": {
         "title": "Transport to Theresienstadt",
         "subtitle": "A Three-Day Journey",
@@ -19,6 +26,13 @@
         "text": "There was no train station in Theresienstadt. Instead, Steen and his family were transported to the station Bauschowitz-Theresienstadt, known today as Bohušovice train station. From here, after their long journey, they had to walk one and a half miles to Theresienstadt.\n\nUpon arrival, they had to hand over their valuable items, including the jewellery and money they had been encouraged to bring. Steen’s mother was allowed to keep her wedding ring only because the Nazis were unable to remove it from her finger. Although new prisoners were split into groups of women, men, and children after their arrival, Steen was able to stay with his mother in Theresienstadt.",
         "location": "Theresienstadt, Czechoslovakia",
         "time": "5 October 1943"
+    },
+    "soccer": {
+        "title": null,
+        "subtitle": null,
+        "text": null,
+        "location": "Theresienstadt, Czechoslovakia",
+        "time": "1943-1945"
     },
     "ball_x5F_group": {
         "title": "Life in Theresienstadt",
@@ -40,6 +54,13 @@
         "text": "One day, when Steen went to the gravel field where they played soccer, his Czech friends did not show up. Steen wondered what was going on and why they did not come. His mother comforted him; she knew what had happened but protected him from the truth. The children had been transported to extermination camps.",
         "location": "Theresienstadt, Czechoslovakia",
         "time": "1943-1945"
+    },
+    "whitebus": {
+        "title": null,
+        "subtitle": null,
+        "text": null,
+        "location": "Theresienstadt, Czechoslovakia",
+        "time": "15 April 1945"
     },
     "whitebus_x5F_group": {
         "title": "Happier Times",
