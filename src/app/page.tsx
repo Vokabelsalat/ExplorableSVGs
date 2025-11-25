@@ -18,12 +18,12 @@ const noto_serif = Noto_Serif({ weight: "400", subsets: ["latin"] });
 // });
 
 const paintings = [
-  { key: "start", svgFile: "/images/Title page-1.svg" },
+  { key: "start", svgFile: "/images/Title page-1.svg", inactive: true },
   { key: "young", svgFile: "/images/Young Steen-1.svg" },
-  { key: "hjallesevej", svgFile: "/images/Hjallesevej-1.svg" },
+  // { key: "hjallesevej", svgFile: "/images/Hjallesevej-1.svg" },
   { key: "transport", svgFile: "/images/Transport scene-2.svg" },
-  { key: "soccer", svgFile: "/images/Soccer scene-1.svg" },
-  { key: "whitebus", svgFile: "/images/White Buses scene-1.svg" },
+  { key: "soccer", svgFile: "/images/Soccer scene-3b.svg" },
+  // { key: "whitebus", svgFile: "/images/White Buses scene-1.svg" },
 ];
 
 export interface StoryEntry {
@@ -105,13 +105,44 @@ function MainMenu() {
               />
             </Link>
           </div>
-          {<Painting key={painting.key} svgFile={painting.svgFile} />}
+          {
+            <Painting
+              key={painting.key}
+              svgFile={painting.svgFile}
+              inactive={painting.inactive}
+            />
+          }
         </div>
         <div className="size-full relative">
           <div className="size-full absolute top-0 left-0">
             {storyData != null && (
               <div className="size-full text-gray-950 relative">
-                <div className="size-full overflow-hidden overflow-y-scroll flex items-center">
+                <svg className="size-full absolute top-0 left-0">
+                  <filter id="roughpaper-sidebar">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="0.04"
+                      result="noise"
+                      numOctaves="5"
+                    />
+
+                    <feDiffuseLighting
+                      in="noise"
+                      lightingColor="#fff"
+                      surfaceScale="2"
+                    >
+                      <feDistantLight azimuth="45" elevation="60" />
+                    </feDiffuseLighting>
+                  </filter>
+                  <rect
+                    width={"100%"}
+                    height={"100%"}
+                    filter="url(#roughpaper-sidebar)"
+                    opacity={0.3}
+                    fill="white"
+                  />
+                </svg>
+                <div className="absolute top-0 left-0 size-full overflow-hidden overflow-y-scroll flex items-center">
                   <div className="size-full flex gap-2 flex-col p-3 px-6 justify-center">
                     <div className={`text-xl ${noto_serif.className}`}>
                       {story.title
@@ -152,31 +183,6 @@ function MainMenu() {
                   </div> */}
                   </div>
                 </div>
-                <svg className="size-full absolute top-0 left-0">
-                  <filter id="roughpaper-sidebar">
-                    <feTurbulence
-                      type="fractalNoise"
-                      baseFrequency="0.04"
-                      result="noise"
-                      numOctaves="5"
-                    />
-
-                    <feDiffuseLighting
-                      in="noise"
-                      lightingColor="#fff"
-                      surfaceScale="2"
-                    >
-                      <feDistantLight azimuth="45" elevation="60" />
-                    </feDiffuseLighting>
-                  </filter>
-                  <rect
-                    width={"100%"}
-                    height={"100%"}
-                    filter="url(#roughpaper-sidebar)"
-                    opacity={0.3}
-                    fill="white"
-                  />
-                </svg>
               </div>
             )}
           </div>

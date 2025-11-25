@@ -65,10 +65,11 @@ function getSvgDimensionsFromString(svgString: string) {
 
 export interface PaintingProps {
   svgFile: string;
+  inactive?: boolean;
 }
 
 export default function Painting(props: PaintingProps) {
-  const { svgFile } = props;
+  const { svgFile, inactive = false } = props;
 
   if (svgFile == null) {
     return <div>No SVG path.</div>;
@@ -424,6 +425,8 @@ export default function Painting(props: PaintingProps) {
     }
   }, [svgWrapperSize]);
 
+  console.log("inactive", inactive);
+
   useEffect(() => {
     if (svgRef.current != null) {
       setHiddenImages(svgRef.current as SVGSVGElement, true);
@@ -433,8 +436,10 @@ export default function Painting(props: PaintingProps) {
         if (element.id != null) {
           element.id = nanoid(4);
         }
-        element.classList.add("myPath");
-        element.addEventListener("click", clickHandler);
+        if (inactive !== true) {
+          element.classList.add("myPath");
+          element.addEventListener("click", clickHandler);
+        }
       });
 
       resetView();

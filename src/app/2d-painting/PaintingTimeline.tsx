@@ -8,6 +8,10 @@ import { setSelectedGroup, setSelectedPainting } from "../../../store/appSlice";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { StoryEntry } from "../page";
 import { ThumbnailPainting } from "./ThumbnailPainting";
+import { Noto_Serif, Reenie_Beanie } from "next/font/google";
+
+const noto_serif = Noto_Serif({ weight: "400", subsets: ["latin"] });
+const reenie_beanie = Reenie_Beanie({ weight: "400", subsets: ["latin"] });
 
 export interface PaintingTimelineProps {
   paintings: Array<any>;
@@ -29,6 +33,27 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
 
   return (
     <div className="size-full items-center grid grid-cols-[64px_auto_64px] gap-2 border-t border-gray-300 relative">
+      <svg className="size-full absolute top-0 left-0 pointer-events-none">
+        <filter id="roughpaper-timeline">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.04"
+            result="noise"
+            numOctaves="5"
+          />
+
+          <feDiffuseLighting in="noise" lightingColor="#fff" surfaceScale="2">
+            <feDistantLight azimuth="45" elevation="60" />
+          </feDiffuseLighting>
+        </filter>
+        <rect
+          width={"100%"}
+          height={"100%"}
+          filter="url(#roughpaper-timeline)"
+          opacity={0.3}
+          fill="white"
+        />
+      </svg>
       {selectedPainting > 0 && (
         <div
           className="rounded-full px-2 size-16 shadow hover:shadow-lg hover:bg-gray-400 hover:text-white cursor-pointer items-center justify-center flex"
@@ -56,13 +81,13 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
             <>
               <div
                 key={`timeline-title-${i}`}
-                className="text-xs row-start-1 py-1"
+                className={`text-xs row-start-1 py-1 ${noto_serif.className}`}
               >
                 {story?.title}
               </div>
               <div
                 key={`timeline-image-${i}`}
-                className="relative items-center justify-between flex pr-1 row-start-2"
+                className="relative items-center justify-between flex pr-5 row-start-2"
               >
                 <div className="absolute top-0 left-0 w-full h-full flex items-center">
                   <div
@@ -121,7 +146,7 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
               </div>
               <div
                 key={`timeline-time-${i}`}
-                className="text-xs row-start-3 py-1"
+                className={`text-xs row-start-3 py-1 ${noto_serif.className}`}
               >
                 {story?.time}
               </div>
@@ -141,27 +166,6 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
           <ChevronRightIcon className="size-7" />
         </div>
       )}
-      <svg className="size-full absolute top-0 left-0 pointer-events-none">
-        <filter id="roughpaper-timeline">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.04"
-            result="noise"
-            numOctaves="5"
-          />
-
-          <feDiffuseLighting in="noise" lightingColor="#fff" surfaceScale="2">
-            <feDistantLight azimuth="45" elevation="60" />
-          </feDiffuseLighting>
-        </filter>
-        <rect
-          width={"100%"}
-          height={"100%"}
-          filter="url(#roughpaper-timeline)"
-          opacity={0.3}
-          fill="white"
-        />
-      </svg>
     </div>
   );
 }
