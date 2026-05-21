@@ -22,7 +22,7 @@ const paintings = [
   { key: "young", svgFile: "/images/combined_photographs-1.svg" },
   { key: "hjallesevej", svgFile: "/images/Hjallesevej-1.svg" },
   { key: "transport", svgFile: "/images/Transport scene-2.svg" },
-  { key: "transport", svgFile: "/images/Barracks.svg" },
+  { key: "barracks", svgFile: "/images/Barracks.svg" },
   { key: "soccer", svgFile: "/images/Soccer scene-3b.svg" },
   { key: "modelcamp", svgFile: "/images/Model Camp scene-1.svg" },
   { key: "whitebus", svgFile: "/images/White Buses scene-1.svg" },
