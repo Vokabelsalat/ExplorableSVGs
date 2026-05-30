@@ -1,149 +1,150 @@
 {
-    "start": {
-        "title": "A Danish Boy In Theresienstadt",
-        "subtitle": "A Drawn Testimony",
-        "text": "On October 2, 1943, eight-year-old Steen Metz and his parents were arrested in their home in Odense, Denmark, and deported to Theresienstadt Concentration Camp.\nWhat followed were eighteen months of hunger, brutality, and loss—including the death of his father from starvation. Of the 15,000 children who passed through Theresienstadt, fewer than 1,500 survived. Steen was one of them. For decades, like many Holocaust survivors, Steen kept his experiences private. But in 2011, he was ready to share his story through his memoir, A Danish Boy in Theresienstadt.\nNow, we retell Steen's journey through an interactive visual experience, where hand-drawn illustrations guide you through his memories. This isn't just a story to read—it's a story to witness, to explore, and to remember.",
-        "location": "Odense, Denmark",
-        "time": "1943"
-    },
-    "young": {
-        "title": "Steen Metz",
-        "subtitle": "An Almost Normal Life",
-        "text": "Steen and his parents lived in the Stovesberg apartment complex at Hjallesevej 98 in Odense, Denmark. Despite food rationing under the occupation, the family maintained an almost normal daily life.\n\nClick on the interactive objects to find out more.",
-        "location": "Odense, Denmark",
-        "time": "1935 - 1943"
-    },
-    "steenphoto_x5F_group": {
-        "title": "Steen Metz",
-        "subtitle": "The Summer Before the Arrest",
-        "text": "Pictured here at the age of eight, Steen is photographed eating ice cream during the summer before his family's arrest. He later recalled the relative normalcy of those years:\n\n'I cycled to and from school. I often met Nazi soldiers – they never spoke to me or touched me.'",
-        "location": "Odense, Denmark",
-        "time": "1935 - 1943"   
-    },
-    "familyphoto_x5F_group": {
-        "title": "Steen Metz",
-        "subtitle": "Living at Stovesberg",
-        "text": "This photograph shows Steen Axel Metz with his father, Axel Mogens Metz, and his grandmother, seated on a stone wall outside their apartment on Hjallesevej. Steen retained fond memories of his father, who taught him to ride a bicycle and tended a garden allotment around the corner from their home, separate from the Stovesberg complex itself. Steen later reflected on the time they spent there together:\n\n'My father had a garden 'commune', since we always lived in apartments without a garden. I have fond memories of the time I spent with my father planting vegetables and flowers from seeds. I even sold some of the final products to my mother. The beginning of my business career!'",
-        "location": "Odense, Denmark",
-        "time": "1935 - 1943"
-    },    
-    "hjallesevej": {
-        "title": "The Arrest",
-        "subtitle": null,
-        "text": "In April 1940, the same month German forces occupied Denmark, nine-year-old Steen and his family moved into a new apartment on Hjallesevej in Odense. Life continued as normal, Steen helped the milkman with his deliveries, and in 1942 he started school. But by the time he reached third class, Steen and his parents were arrested by the Nazis and taken from their home.\n\nClick on the interactive objects to find out more.",
-        "location": "Odense, Denmark",
-        "time": "1935 - 1943"
-    },    
-    "transport": {
-        "title": "Transport to Theresienstadt",
-        "subtitle": "A Three-Day Journey",
-        "text": "Following their arrest, Steen and his parents were loaded aboard a cattle car and transported to Theresienstadt. The journey lasted three days, during which the car remained locked from the outside and stopped only once, when a small amount of water was provided. Among the passengers were four children, including Steen, who were able to lie down. The adults had to alternate between sitting and standing.\n\nClick on the interactive objects to find out more.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "2 October 1943"
-    },
-    "cattlecar_x5F_group": {
-        "title": "The Cattle Car",
-        "subtitle": "Transport to Theresienstadt",
-        "text": "The conditions aboard the transport were poor. Although historians commonly employ the term 'boxcar', Steen and fellow survivors consistently use the term 'cattle car', because that is what it was. The absence of any sanitary facilities produced an overwhelming smell, which Steen remembers vividly. Steen recounts the frightened faces around him, no one had any knowledge of what would happen to them.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "2 October 1943"
-    },
-    "roof_x5F_group": {
-        "title": "Station Bauschowitz-Theresienstadt",
-        "subtitle": "Transport to Theresienstadt",
-        "text": "Theresienstadt had no railway station of its own. Instead, deportees were brought to the station Bauschowitz-Theresienstadt, known today as Bohušovice train station. From here, they were required to walk one and a half miles to reach the camp. Upon arrival, prisoners were ordered to surrender all valuables, including jewellery and money that they had been encouraged to bring. Steen's mother was permitted to retain her wedding ring solely because it could not be removed from her finger.\n\nAlthough the newly arrived prisoners were separated into groups based on gender and age, Steen was permitted to remain with his mother during his time at Theresienstadt.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "5 October 1943"
-    },
-    "barracks": {
-        "title": "Forced Labour",
-        "subtitle": "Living Conditions in Theresienstadt",
-        "text": "A drawing depicted here illustrates the living conditions that Steen and his family endured during their internment at Theresienstadt. They were housed in a loft, where the poor environment posed challenges throughout the year: summers brought infestations of lice and fleas, while winters were marked by extreme cold.\n\nClick on the interactive objects to find out more.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1935 - 1943"
-    },
-    "mother_x5F_group": {
-        "title": "Forced Labour",
-        "subtitle": "Mica Production",
-        "text": "According to Steen’s testimony, his mother was not subjected to physical abuse in Theresienstadt. In addition to childcare duties, she was assigned to factory work, producing insulation material for airplanes from mica. On one occasion, after telling a soldier that she was faring poorly following her husband’s death from malnutrition, the soldier returned each day for eight days, compelling her to state that her husband had died of pneumonia. On a separate occasion, a guard deliberately pushed over a bucket of dirty water while she was cleaning floors, forcing her to start over.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1935 - 1943"
-    },
-    "father_x5F_group": {
-        "title": "Forced Labour",
-        "subtitle": "Road Construction",
-        "text": "Prior to his arrest and deportation to Theresienstadt in October 1943, Steen's father, Axel Mogens Metz, had practised as a lawyer. Within the camp, Axel was assigned to road-construction labour, physically demanding work for which he had no prior preparation. Working days were long, with minimal rest periods and little food. On one occasion, a guard confiscated his coat stating that it was unsuitable for manual labour.\n\nSteen only learned after the war that his father had been subjected to physical abuse during his time at Theresienstadt.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1935 - 1943"
-    },
-    "death_x5F_group": {
-        "title": "Forced Labour",
-        "subtitle": "The Death of Steen’s Father",
-        "text": "The toll of the camp conditions caused Axel Mogens Metz to lose about fifty percent of his body weight. Although the camp infirmary’s medical staff performed their duties thoroughly, they lacked the supplies necessary to provide adequate care. On 13 March 1944, Steen’s father died of malnutrition at the age of forty; the Nazi authorities recorded the cause of death as pneumonia.\n\nIn a later interview, Steen’s mother recounted that she was required to visit seventeen separate locations before receiving confirmation of her husband’s death.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1935 - 1943"
-    },
-    "soccer": {
-        "title": "Playing Soccer",
-        "subtitle": "Life in Theresienstadt",
-        "text": "Steen was only nine years old when he was held at Theresienstadt. Amid queuing for food and delivering messages in the camp, he found moments of friendship and childhood while playing soccer. In his testimony, Steen recalled that these were the only moments in which he felt closest to being a nine-year-old boy.\n\nClick on the interactive objects to find out more.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1943 - 1945"
-    },
-    "ball_x5F_group": {
-        "title": "The Soccer Field",
-        "subtitle": "Playing Soccer",
-        "text": "Steen played with a group of Czech children. In order to communicate with them, he learned Czech phonetically. The conditions in which Steen and his Czech friends played were makeshift. There was no soccer field, no designated goal post, and no proper ball; the games took place on a gravel field, and Steen's mother made a ball from old rags – one that did not last long.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1943 - 1945"
-    },
-    "steenmetz_x5F_group": {
-        "title": "Friendships in Theresienstadt",
-        "subtitle": "Playing Soccer",
-        "text": "Besides lining up for food and doing voluntary work, Steen played soccer with some of the Czech children in Theresienstadt. To communicate with them, he learned Czech phonetically. Steen recalls that these were the only moments where he felt closest to being a nine-year-old.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1943 - 1945"
-    },
-    "friends_x5F_group": {
-        "title": "Friendships in Theresienstadt",
-        "subtitle": "Playing Soccer",
-        "text": "On one occasion, Steen arrived at the field to play soccer to find that his Czech friends had not come. His mother, who knew what had happened, comforted him and chose to protect him from the truth: the children had been transported to extermination camps.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "1943 - 1945"
-    },
-    "whitebus": {
-        "title": "Happier Times",
-        "subtitle": "Liberation by the White Busses",
-        "text": "In April 1945, a few weeks before the end of the war, prisoners in Theresienstadt heard rumours that the White Busses were on their way from Sweden to liberate the Danish Jews. Although Sweden was a neutral country, the White Busses arrived safely two days later, on 15 April. It was a miracle that they had been able to travel through Germany unharmed.\n\nClick on the interactive objects to find out more.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "15 April 1945"
-    },
-    "whitebus_x5F_group": {
-        "title": "Happier Times",
-        "subtitle": "Liberation by the White Busses",
-        "text": "The White Busses rescued approximately 425 surviving Danish Jews. Before departure, eight young Danish men married women from other countries so that they could also be liberated. Among those who left were four babies who had been born in the camp in secret. On the way back, the White Busses had to make several stops. Steen still remembers the sound of bombardments and the faces of young soldiers along the road.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "15 April 1945"
-    },
-    "crowd_x5F_group": {
-        "title": "Happier Times",
-        "subtitle": "Liberation by the White Busses",
-        "text": "When the White Busses reached the Danish border on 17 April, Denmark was still under occupation. Nonetheless, the rescued Jews were greeted with flowers, candy, snacks, and sandwiches. The White Busses continued to Sweden, where the liberated prisoners spent around eight days in quarantine.",
-        "location": "Denmark",
-        "time": "17 April 1945"
-    },
-    "modelcamp": {
-        "title": "The Beautification Program",
-        "subtitle": "The Model Camp",
-        "text": "In 1944, the International Committee of the Red Cross, accompanied by representatives of the Danish administration, requested access to the camp to assess the treatment of Danish Jewish prisoners. As far as Steen knows, there were no requests from other countries to see the camp. The Nazi authorities recognised the visit as a propaganda opportunity, giving Theresienstadt the nickname 'model camp'.\n\nClick on the interactive objects to find out more.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "February 1944 - June 1944"
-    },
-    "pavillion_x5F_group": {
-        "title": "A Visit from the Danish Delegation",
-        "subtitle": "The Beautification Program",
-        "text": "In preparation for the inspection, the Nazis initiated the beautification programme in the beginning of February 1944. Streets and buildings were cleaned, flower beds were laid out, and recreational spaces were constructed. To reduce the appearance of overcrowding, approximately 7,500 prisoners were deported to Auschwitz prior to the visit.\n\nThe inspection took place in the summer of 1944, lasting between four and eight hours. The visit had been carefully rehearsed in advance. Prisoners were directed to perform assigned activities, hard labour was suspended, and Danish Jews were relocated to better quarters. The prisoners were explicitly forbidden from speaking to the delegation or asking questions.",
-        "location": "Theresienstadt, Czechoslovakia",
-        "time": "February 1944 - June 1944"
-    }
+  "start": {
+    "title": "A Danish Boy In Theresienstadt",
+    "subtitle": "A Drawn Testimony",
+    "text": "On October 2, 1943, eight-year-old Steen Metz and his parents were arrested in their home in Odense, Denmark, and deported to Theresienstadt Concentration Camp.\nWhat followed were eighteen months of hunger, brutality, and loss—including the death of his father from starvation. Of the 15,000 children who passed through Theresienstadt, fewer than 1,500 survived. Steen was one of them. For decades, like many Holocaust survivors, Steen kept his experiences private. But in 2011, he was ready to share his story through his memoir, A Danish Boy in Theresienstadt.\nNow, we retell Steen's journey through an interactive visual experience, where hand-drawn illustrations guide you through his memories. This isn't just a story to read—it's a story to witness, to explore, and to remember.",
+    "location": "Odense, Denmark",
+    "time": "1943"
+  },
+  "young": {
+    "title": "Steen Metz",
+    "subtitle": "An Almost Normal Life",
+    "text": "Steen and his parents lived in the Stovesberg apartment complex at Hjallesevej 98 in Odense, Denmark. Despite food rationing under the occupation, the family maintained an almost normal daily life.\n\nClick on the interactive objects to find out more.",
+    "location": "Odense, Denmark",
+    "time": "1935 - 1943",
+    "audio": "almost-normal-life.mp3"
+  },
+  "steenphoto_x5F_group": {
+    "title": "Steen Metz",
+    "subtitle": "The Summer Before the Arrest",
+    "text": "Pictured here at the age of eight, Steen is photographed eating ice cream during the summer before his family's arrest. He later recalled the relative normalcy of those years:\n\n'I cycled to and from school. I often met Nazi soldiers – they never spoke to me or touched me.'",
+    "location": "Odense, Denmark",
+    "time": "1935 - 1943"
+  },
+  "familyphoto_x5F_group": {
+    "title": "Steen Metz",
+    "subtitle": "Living at Stovesberg",
+    "text": "This photograph shows Steen Axel Metz with his father, Axel Mogens Metz, and his grandmother, seated on a stone wall outside their apartment on Hjallesevej. Steen retained fond memories of his father, who taught him to ride a bicycle and tended a garden allotment around the corner from their home, separate from the Stovesberg complex itself. Steen later reflected on the time they spent there together:\n\n'My father had a garden 'commune', since we always lived in apartments without a garden. I have fond memories of the time I spent with my father planting vegetables and flowers from seeds. I even sold some of the final products to my mother. The beginning of my business career!'",
+    "location": "Odense, Denmark",
+    "time": "1935 - 1943"
+  },
+  "hjallesevej": {
+    "title": "The Arrest",
+    "subtitle": null,
+    "text": "In April 1940, the same month German forces occupied Denmark, nine-year-old Steen and his family moved into a new apartment on Hjallesevej in Odense. Life continued as normal, Steen helped the milkman with his deliveries, and in 1942 he started school. But by the time he reached third class, Steen and his parents were arrested by the Nazis and taken from their home.\n\nClick on the interactive objects to find out more.",
+    "location": "Odense, Denmark",
+    "time": "1935 - 1943"
+  },
+  "transport": {
+    "title": "Transport to Theresienstadt",
+    "subtitle": "A Three-Day Journey",
+    "text": "Following their arrest, Steen and his parents were loaded aboard a cattle car and transported to Theresienstadt. The journey lasted three days, during which the car remained locked from the outside and stopped only once, when a small amount of water was provided. Among the passengers were four children, including Steen, who were able to lie down. The adults had to alternate between sitting and standing.\n\nClick on the interactive objects to find out more.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "2 October 1943"
+  },
+  "cattlecar_x5F_group": {
+    "title": "The Cattle Car",
+    "subtitle": "Transport to Theresienstadt",
+    "text": "The conditions aboard the transport were poor. Although historians commonly employ the term 'boxcar', Steen and fellow survivors consistently use the term 'cattle car', because that is what it was. The absence of any sanitary facilities produced an overwhelming smell, which Steen remembers vividly. Steen recounts the frightened faces around him, no one had any knowledge of what would happen to them.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "2 October 1943"
+  },
+  "roof_x5F_group": {
+    "title": "Station Bauschowitz-Theresienstadt",
+    "subtitle": "Transport to Theresienstadt",
+    "text": "Theresienstadt had no railway station of its own. Instead, deportees were brought to the station Bauschowitz-Theresienstadt, known today as Bohušovice train station. From here, they were required to walk one and a half miles to reach the camp. Upon arrival, prisoners were ordered to surrender all valuables, including jewellery and money that they had been encouraged to bring. Steen's mother was permitted to retain her wedding ring solely because it could not be removed from her finger.\n\nAlthough the newly arrived prisoners were separated into groups based on gender and age, Steen was permitted to remain with his mother during his time at Theresienstadt.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "5 October 1943"
+  },
+  "barracks": {
+    "title": "Forced Labour",
+    "subtitle": "Living Conditions in Theresienstadt",
+    "text": "A drawing depicted here illustrates the living conditions that Steen and his family endured during their internment at Theresienstadt. They were housed in a loft, where the poor environment posed challenges throughout the year: summers brought infestations of lice and fleas, while winters were marked by extreme cold.\n\nClick on the interactive objects to find out more.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1935 - 1943"
+  },
+  "mother_x5F_group": {
+    "title": "Forced Labour",
+    "subtitle": "Mica Production",
+    "text": "According to Steen’s testimony, his mother was not subjected to physical abuse in Theresienstadt. In addition to childcare duties, she was assigned to factory work, producing insulation material for airplanes from mica. On one occasion, after telling a soldier that she was faring poorly following her husband’s death from malnutrition, the soldier returned each day for eight days, compelling her to state that her husband had died of pneumonia. On a separate occasion, a guard deliberately pushed over a bucket of dirty water while she was cleaning floors, forcing her to start over.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1935 - 1943"
+  },
+  "father_x5F_group": {
+    "title": "Forced Labour",
+    "subtitle": "Road Construction",
+    "text": "Prior to his arrest and deportation to Theresienstadt in October 1943, Steen's father, Axel Mogens Metz, had practised as a lawyer. Within the camp, Axel was assigned to road-construction labour, physically demanding work for which he had no prior preparation. Working days were long, with minimal rest periods and little food. On one occasion, a guard confiscated his coat stating that it was unsuitable for manual labour.\n\nSteen only learned after the war that his father had been subjected to physical abuse during his time at Theresienstadt.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1935 - 1943"
+  },
+  "death_x5F_group": {
+    "title": "Forced Labour",
+    "subtitle": "The Death of Steen’s Father",
+    "text": "The toll of the camp conditions caused Axel Mogens Metz to lose about fifty percent of his body weight. Although the camp infirmary’s medical staff performed their duties thoroughly, they lacked the supplies necessary to provide adequate care. On 13 March 1944, Steen’s father died of malnutrition at the age of forty; the Nazi authorities recorded the cause of death as pneumonia.\n\nIn a later interview, Steen’s mother recounted that she was required to visit seventeen separate locations before receiving confirmation of her husband’s death.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1935 - 1943"
+  },
+  "soccer": {
+    "title": "Playing Soccer",
+    "subtitle": "Life in Theresienstadt",
+    "text": "Steen was only nine years old when he was held at Theresienstadt. Amid queuing for food and delivering messages in the camp, he found moments of friendship and childhood while playing soccer. In his testimony, Steen recalled that these were the only moments in which he felt closest to being a nine-year-old boy.\n\nClick on the interactive objects to find out more.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1943 - 1945"
+  },
+  "ball_x5F_group": {
+    "title": "The Soccer Field",
+    "subtitle": "Playing Soccer",
+    "text": "Steen played with a group of Czech children. In order to communicate with them, he learned Czech phonetically. The conditions in which Steen and his Czech friends played were makeshift. There was no soccer field, no designated goal post, and no proper ball; the games took place on a gravel field, and Steen's mother made a ball from old rags – one that did not last long.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1943 - 1945"
+  },
+  "steenmetz_x5F_group": {
+    "title": "Friendships in Theresienstadt",
+    "subtitle": "Playing Soccer",
+    "text": "Besides lining up for food and doing voluntary work, Steen played soccer with some of the Czech children in Theresienstadt. To communicate with them, he learned Czech phonetically. Steen recalls that these were the only moments where he felt closest to being a nine-year-old.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1943 - 1945"
+  },
+  "friends_x5F_group": {
+    "title": "Friendships in Theresienstadt",
+    "subtitle": "Playing Soccer",
+    "text": "On one occasion, Steen arrived at the field to play soccer to find that his Czech friends had not come. His mother, who knew what had happened, comforted him and chose to protect him from the truth: the children had been transported to extermination camps.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "1943 - 1945"
+  },
+  "whitebus": {
+    "title": "Happier Times",
+    "subtitle": "Liberation by the White Busses",
+    "text": "In April 1945, a few weeks before the end of the war, prisoners in Theresienstadt heard rumours that the White Busses were on their way from Sweden to liberate the Danish Jews. Although Sweden was a neutral country, the White Busses arrived safely two days later, on 15 April. It was a miracle that they had been able to travel through Germany unharmed.\n\nClick on the interactive objects to find out more.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "15 April 1945"
+  },
+  "whitebus_x5F_group": {
+    "title": "Happier Times",
+    "subtitle": "Liberation by the White Busses",
+    "text": "The White Busses rescued approximately 425 surviving Danish Jews. Before departure, eight young Danish men married women from other countries so that they could also be liberated. Among those who left were four babies who had been born in the camp in secret. On the way back, the White Busses had to make several stops. Steen still remembers the sound of bombardments and the faces of young soldiers along the road.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "15 April 1945"
+  },
+  "crowd_x5F_group": {
+    "title": "Happier Times",
+    "subtitle": "Liberation by the White Busses",
+    "text": "When the White Busses reached the Danish border on 17 April, Denmark was still under occupation. Nonetheless, the rescued Jews were greeted with flowers, candy, snacks, and sandwiches. The White Busses continued to Sweden, where the liberated prisoners spent around eight days in quarantine.",
+    "location": "Denmark",
+    "time": "17 April 1945"
+  },
+  "modelcamp": {
+    "title": "The Beautification Program",
+    "subtitle": "The Model Camp",
+    "text": "In 1944, the International Committee of the Red Cross, accompanied by representatives of the Danish administration, requested access to the camp to assess the treatment of Danish Jewish prisoners. As far as Steen knows, there were no requests from other countries to see the camp. The Nazi authorities recognised the visit as a propaganda opportunity, giving Theresienstadt the nickname 'model camp'.\n\nClick on the interactive objects to find out more.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "February 1944 - June 1944"
+  },
+  "pavillion_x5F_group": {
+    "title": "A Visit from the Danish Delegation",
+    "subtitle": "The Beautification Program",
+    "text": "In preparation for the inspection, the Nazis initiated the beautification programme in the beginning of February 1944. Streets and buildings were cleaned, flower beds were laid out, and recreational spaces were constructed. To reduce the appearance of overcrowding, approximately 7,500 prisoners were deported to Auschwitz prior to the visit.\n\nThe inspection took place in the summer of 1944, lasting between four and eight hours. The visit had been carefully rehearsed in advance. Prisoners were directed to perform assigned activities, hard labour was suspended, and Danish Jews were relocated to better quarters. The prisoners were explicitly forbidden from speaking to the delegation or asking questions.",
+    "location": "Theresienstadt, Czechoslovakia",
+    "time": "February 1944 - June 1944"
+  }
 }

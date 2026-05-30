@@ -8,6 +8,7 @@ import { setMode, setSelectedPainting } from "../../store/appSlice";
 import { State, store } from "../../store/store";
 import Painting from "./2d-painting/painting";
 import { PaintingTimeline } from "./2d-painting/PaintingTimeline";
+import { PaintingAudio } from "./2d-painting/PaintingAudio";
 
 const reenie_beanie = Reenie_Beanie({ weight: "400", subsets: ["latin"] });
 const noto_serif = Noto_Serif({ weight: "400", subsets: ["latin"] });
@@ -35,6 +36,7 @@ export interface StoryEntry {
   location: string;
   time: string;
   svgElement: string;
+  audio?: string;
 }
 
 function MainMenu() {
@@ -77,7 +79,7 @@ function MainMenu() {
         subtitle: "Please add subtitle.",
         location: "Please add location.",
         time: "Please add time.",
-      };
+      } as StoryEntry;
     }
   }, [painting, selectedGroup, storyData]);
 
@@ -149,17 +151,17 @@ function MainMenu() {
                     <div className={`text-xl ${noto_serif.className}`}>
                       {story.title
                         ? story.title
-                            .split("\n")
-                            .map((e, i) => <div key={`title-${i}`}>{e}</div>)
+                          .split("\n")
+                          .map((e, i) => <div key={`title-${i}`}>{e}</div>)
                         : "Please add title."}
                     </div>
                     <div className={`text-2xl ${reenie_beanie.className}`}>
                       {story.subtitle
                         ? story.subtitle
-                            .split("\n")
-                            .map((e, i) => (
-                              <div key={`timeline-subtitle-${i}`}>{e}</div>
-                            ))
+                          .split("\n")
+                          .map((e, i) => (
+                            <div key={`timeline-subtitle-${i}`}>{e}</div>
+                          ))
                         : "Please add subtitle."}
                     </div>
                     <div className="text-xs opacity-75 flex flex-col gap-1">
@@ -169,11 +171,16 @@ function MainMenu() {
                     <div className="text-sm flex gap-1 flex-col">
                       {story.text
                         ? story.text
-                            .split("\n")
-                            .map((e, i) => (
-                              <p key={`timeline-text-${i}`}>{e}</p>
-                            ))
+                          .split("\n")
+                          .map((e, i) => (
+                            <p key={`timeline-text-${i}`}>{e}</p>
+                          ))
                         : "Please add text."}
+                    </div>
+                    <div className="text-sm flex gap-1 flex-col">
+                      {story.audio &&
+                        <PaintingAudio src={`/audio/${story.audio}`} />
+                      }
                     </div>
                     {/* <div className="grid grid-cols-[auto_auto] items-center justify-center gap-2">
                     <CursorArrowRaysIcon
