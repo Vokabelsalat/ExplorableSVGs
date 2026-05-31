@@ -5,7 +5,7 @@ interface PaintingAudioProps {
 }
 
 export function getSteenPortrait() {
-    return <div className="h-20 w-20 p-2 shrink-0 overflow-hidden rounded-full border-2 border-gray-300">
+    return <div className="h-20 w-20 pt-1 shrink-0 overflow-hidden rounded-full border-2 border-gray-300 bg-gray-100">
         <img
             src='/images/steen.png'
             alt=""

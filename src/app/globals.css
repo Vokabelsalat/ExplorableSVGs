@@ -248,6 +248,11 @@ input:checked + .slider:before {
     filter: none !important;
   }
 
+.shadow {
+  -webkit-filter: drop-shadow( 0px 0px 70px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 0px 0px 70px rgba(0, 0, 0, .7));
+}
+
 .fade-stroke-animation {
   /* stroke: rgb(223, 164, 76);
   stroke-width: 1px; */
