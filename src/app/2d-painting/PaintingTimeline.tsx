@@ -23,10 +23,11 @@ function sameElements(left: Array<string> = [], right: Array<string> = []) {
 export interface PaintingTimelineProps {
   paintings: Array<any>;
   storyData: Record<string, StoryEntry>;
+  discoveredStoryKeys: Array<string>;
 }
 
 export function PaintingTimeline(props: PaintingTimelineProps) {
-  const { paintings, storyData } = props;
+  const { paintings, storyData, discoveredStoryKeys } = props;
   const dispatch = useDispatch();
   const selectedPainting = useSelector(
     (state: State) => state.app.selectedPainting
@@ -56,9 +57,12 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
   const canNavigateNext =
     selectedGroupIndex >= 0
       ? selectedGroupIndex + 1 < currentInteractiveElements.length ||
-        selectedPainting + 1 < paintings.length
+      selectedPainting + 1 < paintings.length
       : currentInteractiveElements.length > 0 ||
-        selectedPainting + 1 < paintings.length;
+      selectedPainting + 1 < paintings.length;
+
+  const discoveredStoryCount = discoveredStoryKeys.length;
+  const totalStoryCount = Object.keys(storyData).length;
 
   function navigatePrevious() {
     if (selectedGroupIndex > 0) {
@@ -79,7 +83,7 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
       dispatch(
         setSelectedGroup(
           previousInteractiveElements[previousInteractiveElements.length - 1] ??
-            null
+          null
         )
       );
     }
@@ -166,6 +170,7 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
       >
         {paintings.map((e, i) => {
           const story = storyData ? storyData[e.key] ?? null : null;
+          const paintingDiscovered = discoveredStoryKeys.includes(e.key);
           return (
             <>
               <div
@@ -185,7 +190,7 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
                   ></div>
                 </div>
                 <div
-                  className={`size-18 rounded-full overflow-hidden relative cursor-pointer shadow-md items-center bg-white ${selectedPainting === i && selectedGroup == null
+                  className={`size-18 rounded-full overflow-hidden relative cursor-pointer shadow-md items-center bg-white ${paintingDiscovered || (selectedPainting === i && selectedGroup == null)
                     ? "border-3 border-gray-400"
                     : ""
                     }`}
@@ -269,6 +274,7 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
                       key={`timeline-thumbnail-${i}`}
                       elementID={ie}
                       svgFile={e.svgFile}
+                      discovered={discoveredStoryKeys.includes(ie)}
                     />
                   ))}
               </div>
@@ -282,14 +288,22 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
           );
         })}
       </div>
-      {canNavigateNext && (
+      <div className="col-start-3 row-start-1 z-10 flex size-full flex-col items-center justify-center gap-1">
+        {canNavigateNext && (
+          <div
+            className="px-2 shadow hover:shadow-lg hover:bg-gray-400 hover:text-white cursor-pointer size-16 rounded-full justify-center items-center flex"
+            onClick={navigateNext}
+          >
+            <ChevronRightIcon className="size-7" />
+          </div>
+        )}
         <div
-          className="px-2 shadow hover:shadow-lg hover:bg-gray-400 hover:text-white cursor-pointer size-16 rounded-full justify-center items-center flex"
-          onClick={navigateNext}
+          className={`text-xs text-gray-600 ${noto_serif.className}`}
+          aria-label={`Discovered ${discoveredStoryCount} of ${totalStoryCount} story entries`}
         >
-          <ChevronRightIcon className="size-7" />
+          {discoveredStoryCount}/{totalStoryCount}
         </div>
-      )}
+      </div>
     </div>
   );
 }

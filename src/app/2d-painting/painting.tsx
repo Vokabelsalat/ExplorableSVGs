@@ -66,10 +66,11 @@ export function getSvgDimensionsFromString(svgString: string) {
 export interface PaintingProps {
   svgFile: string;
   inactive?: boolean;
+  discoveredStoryKeys?: Array<string>;
 }
 
 export default function Painting(props: PaintingProps) {
-  const { svgFile, inactive = false } = props;
+  const { svgFile, inactive = false, discoveredStoryKeys = [] } = props;
 
   if (svgFile == null) {
     return <div>No SVG path.</div>;
@@ -271,6 +272,26 @@ export default function Painting(props: PaintingProps) {
     });
   }
 
+  function updateDiscoveredElements() {
+    const svg = svgRef.current as SVGSVGElement | null;
+
+    if (svg == null) {
+      return;
+    }
+
+    svg.querySelectorAll(".discovered").forEach((element) => {
+      (element as SVGElement).classList.remove("discovered");
+    });
+
+    discoveredStoryKeys.forEach((storyKey) => {
+      const group = svg.querySelector(`#${storyKey}`);
+
+      if (group != null) {
+        group.classList.add("discovered");
+      }
+    });
+  }
+
   function clickInteractiveElement(e: SVGPathElement) {
     resetSelectedElements();
 
@@ -460,6 +481,10 @@ export default function Painting(props: PaintingProps) {
       resetView();
     }
   }, [svgRef.current, loaded]);
+
+  useEffect(() => {
+    updateDiscoveredElements();
+  }, [discoveredStoryKeys, loaded]);
 
   const selectedGroup = useSelector((state: State) => state.app.selectedGroup);
 

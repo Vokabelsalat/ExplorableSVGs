@@ -6,10 +6,11 @@ import { State } from "../../../store/store";
 interface ThumbnailPaintingProps {
   elementID: string;
   svgFile: string;
+  discovered?: boolean;
 }
 
 export function ThumbnailPainting(props: ThumbnailPaintingProps) {
-  const { elementID, svgFile } = props;
+  const { elementID, svgFile, discovered = false } = props;
   const dispatch = useDispatch();
 
   const [image, setImage] = useState<string | null>(null);
@@ -46,7 +47,7 @@ export function ThumbnailPainting(props: ThumbnailPaintingProps) {
   return (
     <div
       className={`size-12 rounded-full overflow-hidden bg-slate-50 relative cursor-pointer shadow-md items-center ${
-        selectedGroup === elementID ? "border-3 border-gray-400" : ""
+        selectedGroup === elementID || discovered ? "border-3 border-gray-400" : ""
       }`}
       key={`timeline-sub-entry-${elementID}`}
       onClick={(e) => {

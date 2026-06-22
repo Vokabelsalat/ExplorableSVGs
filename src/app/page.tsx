@@ -102,6 +102,7 @@ function MainMenu() {
   const [storyData, setStoryData] = useState<Record<string, StoryEntry>>();
   const [dataView, setDataView] = useState<boolean>(false);
   const [focusData, setFocusData] = useState<any>(null);
+  const [discoveredStoryKeys, setDiscoveredStoryKeys] = useState<Array<string>>([]);
 
   useEffect(() => {
     fetch("/story-data.json")
@@ -115,15 +116,37 @@ function MainMenu() {
     return paintings.filter((e, i) => i === selectedPainting)[0];
   }, [selectedPainting]);
 
+  const selectedStoryKey = useMemo(() => {
+    if (storyData == null) {
+      return null;
+    }
+
+    if (selectedGroup != null && Object.keys(storyData).includes(selectedGroup)) {
+      return selectedGroup;
+    }
+
+    if (storyData[painting.key] != null) {
+      return painting.key;
+    }
+
+    return null;
+  }, [painting, selectedGroup, storyData]);
+
+  useEffect(() => {
+    if (selectedStoryKey == null) {
+      return;
+    }
+
+    setDiscoveredStoryKeys((currentKeys) =>
+      currentKeys.includes(selectedStoryKey)
+        ? currentKeys
+        : [...currentKeys, selectedStoryKey]
+    );
+  }, [selectedStoryKey]);
+
   const story = useMemo(() => {
-    if (
-      storyData != null &&
-      selectedGroup != null &&
-      Object.keys(storyData).includes(selectedGroup)
-    ) {
-      return storyData[selectedGroup as string];
-    } else if (storyData != null && storyData[painting.key] != null) {
-      return storyData[painting.key];
+    if (storyData != null && selectedStoryKey != null) {
+      return storyData[selectedStoryKey];
     } else {
       return {
         title: "Please add title.",
@@ -133,7 +156,7 @@ function MainMenu() {
         time: "Please add time.",
       } as StoryEntry;
     }
-  }, [painting, selectedGroup, storyData]);
+  }, [selectedStoryKey, storyData]);
 
   const renderContent = useCallback((story: any, dataView: any) => {
     return <>
@@ -223,6 +246,7 @@ function MainMenu() {
               key={painting.key}
               svgFile={painting.svgFile}
               inactive={painting.inactive}
+              discoveredStoryKeys={discoveredStoryKeys}
             />
           }
         </div>
@@ -271,7 +295,11 @@ function MainMenu() {
 
       <div className="size-full">
         {storyData && (
-          <PaintingTimeline paintings={paintings} storyData={storyData} />
+          <PaintingTimeline
+            paintings={paintings}
+            storyData={storyData}
+            discoveredStoryKeys={discoveredStoryKeys}
+          />
         )}
       </div>
 
