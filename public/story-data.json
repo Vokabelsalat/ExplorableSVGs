@@ -85,16 +85,11 @@
     "data": [
       {
         "image": "/images/data/cattlecar.png",
-        "caption": "This is a longer caption of the image shoing a cattlecar for deportation."
+        "caption": "Example image of a cattle car, which Steen Metz often shows during his presentations."
       },
       {
-        "image": "/images/data/station-people.png",
-        "caption": "Station and people"
-      },
-      { "image": "/images/data/cattlecar.png", "caption": "Cattlecar" },
-      {
-        "image": "/images/data/station-people.png",
-        "caption": "Station and people"
+        "image": "/images/data/trainstation",
+        "caption": "Postcard of the Theresienstadt-Bauschowitz train station in 1907, where prisoners would arrive before the construction of a station in Theresienstadt."
       }
     ]
   },
