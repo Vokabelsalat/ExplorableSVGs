@@ -257,11 +257,30 @@ function MainMenu() {
         <div className="size-full relative">
           <div className="size-full absolute top-0 left-0">
             {storyData != null && (
-              <div className="size-full text-gray-950 relative">
+              <div className={`size-full text-gray-950 relative transition-all ${dataView ? 'bg-gray-300 border-l border-gray-400' : ''}`}>
                 <div className="absolute top-0 left-0 size-full overflow-hidden overflow-y-scroll flex items-center">
                   {story.data != null &&
-                    <div className="absolute top-5 right-5 cursor-pointer z-50 text-sm border border-gray-300 rounded-full p-1" onClick={() => { setDataView(dataView ? false : true) }}>See the {dataView ? "story" : "data"}!
-                    </div>}
+                    <button
+                      type="button"
+                      role="switch"
+                      aria-checked={dataView}
+                      aria-label={`See the ${dataView ? "story" : "data"}`}
+                      className="absolute top-5 right-5 z-50 flex items-center gap-2 rounded-m px-2 py-1 text-sm transition"
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        setDataView((currentDataView) => !currentDataView);
+                      }}
+                    >
+                      <span>View</span>
+                      <div className="grid grid-cols-2 items-center rounded-md border border-gray-400 cursor-pointer">
+                        <div className={`h-full p-1 text-center transition-colors ${dataView ? "text-gray-700" : "bg-gray-600 text-white shadow-sm"}`}>
+                          story
+                        </div>
+                        <div className={`h-full p-1 text-center transition-colors ${dataView ? "bg-gray-600 text-white shadow-sm" : "text-gray-700"}`}>
+                          data
+                        </div>
+                      </div>
+                    </button>}
                   <div className="w-full max-h-full flex gap-2 flex-col p-3 px-6">
                     {renderContent(story, dataView)}
                   </div>
