@@ -315,13 +315,13 @@
     "data": [
       {
         "image": "/images/data/whitebusses.jpg",
-        "caption": "White Buses after Liberation",
-        "copyright": null
+        "caption": "Photograph of one of the White Buses with the Swedish flag and Red Cross symbol.",
+        "copyright": " The Jewish Community in Denmark."
       },
       {
         "image": "/images/data/whitebusses2.jpg",
-        "caption": "White Buses Colorised",
-        "copyright": null
+        "caption": "The White Busses after their arrival in Denmark.",
+        "copyright": " Danish Red Cross."
       }
     ]
   },
@@ -330,7 +330,19 @@
     "subtitle": "Liberation by the White Buses",
     "text": "When the White Buses reached the Danish border on 17 April, Denmark was still under occupation. Nonetheless, the rescued Jews were greeted with flowers, candy, snacks, and sandwiches. Continuing through Denmark, the former prisoners took the ferry from the Copenhagen port to Malmö, Sweden, where the liberated prisoners were quarantined for two weeks in either Tylösand or Strangnæs.",
     "location": "Denmark",
-    "time": "17 April 1945"
+    "time": "17 April 1945",
+    "data": [
+      {
+        "image": "/images/data/buses_welcomejutland.jpg",
+        "caption": "The White Buses traveling through southern Jutland, where the White Buses are welcomed by cheering crowds.",
+        "copyright": " Swedish Red Cross."
+      },
+      {
+        "image": "/images/data/buses_haderslev.jpg",
+        "caption": "Transport of Danish Jews from Theresienstadt with a stop in Haderslev.",
+        "copyright": " The Museum of Danish Resistance (Frihedsmuseet)."
+      }
+    ]
   },
   "modelcamp": {
     "title": "The Model Camp",
