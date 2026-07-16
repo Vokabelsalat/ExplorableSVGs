@@ -73,7 +73,11 @@
         "image": "/images/data/stovesberg.jpg",
         "caption": "Stovesberg Apartment Complex.",
         "copyright": " Housing Cooperative Stovesberg."
-      }
+      },
+      {
+        "image": "/images/data/arrest_hjallesevej.jpg",
+        "caption": "Stovesberg Apartment Complex in 2025",
+        "copyright": "Photo: Anouk Stevens."
     ]
   },
   "door_x5F_group": {
