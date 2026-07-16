@@ -261,7 +261,14 @@
     "subtitle": "Playing Soccer",
     "text": "Steen played with a group of Czech children. In order to communicate with them, he learned Czech phonetically. The conditions in which Steen and his Czech friends played were makeshift. There was no soccer field, no designated goal post, and no proper ball; the games took place on a gravel field, and Steen's mother made a ball from old rags – one that did not last long.",
     "location": "Theresienstadt, Czechoslovakia",
-    "time": "1943 - 1945"
+    "time": "1943 - 1945",
+    "data": [
+      {
+        "image": "/images/data/soccer_childrenbarrack.avif",
+        "caption": "text",
+        "copyright": null
+      }
+    ]
   },
   "steenmetz_x5F_group": {
     "title": "Friendships in Theresienstadt",
@@ -276,7 +283,19 @@
     "text": "On one occasion, Steen arrived at the field to play soccer to find that his Czech friends had not come. His mother, who knew what had happened, comforted him and chose to protect him from the truth: the children had been transported to extermination camps.",
     "location": "Theresienstadt, Czechoslovakia",
     "time": "1943 - 1945",
-    "audio": "soccer_friends.mp3" 
+    "audio": "soccer_friends.mp3",
+    "data": [
+      {
+        "image": "/images/data/soccer_propaganda.avif",
+        "caption": "A painting depicting the main entrance gate to the Theresienstadt ghetto in the Czech Republic and forced labourers with tools returning from work. Painted by Edvard Neugebauer on August 28, 1943.",
+        "copyright": null
+      },
+      {
+        "image": "/images/data/soccer_sketch.jpeg",
+        "caption": "text",
+        "copyright": null
+      }
+    ]
   },
   "whitebus": {
     "title": "Happier Times",
