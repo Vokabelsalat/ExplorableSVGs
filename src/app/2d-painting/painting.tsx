@@ -458,6 +458,7 @@ export default function Painting(props: PaintingProps) {
         }
         if (inactive !== true) {
           element.classList.add("myPath");
+          element.setAttribute("opacity", "1.0");
           element.addEventListener("click", clickHandler);
         }
       });

@@ -10,6 +10,7 @@ import Painting from "./2d-painting/painting";
 import { PaintingTimeline } from "./2d-painting/PaintingTimeline";
 import { getSteenPortrait, PaintingAudio } from "./2d-painting/PaintingAudio";
 import { PaintingMap } from "./map/PaintingMap";
+import { CursorArrowRaysIcon } from "@heroicons/react/24/solid";
 
 const reenie_beanie = Reenie_Beanie({ weight: "400", subsets: ["latin"] });
 const noto_serif = Noto_Serif({ weight: "400", subsets: ["latin"] });
@@ -162,7 +163,7 @@ function MainMenu() {
     }
   }, [selectedStoryKey, storyData]);
 
-  const renderContent = useCallback((story: any, dataView: any) => {
+  const renderContent = useCallback((story: any, dataView: any, inactive = false, selectedGroup = null) => {
     return <>
       <div className={`text-xl ${noto_serif.className}`}>
         {story.title
@@ -200,6 +201,11 @@ function MainMenu() {
               ? renderStoryText(story.text)
               : "Please add text."}
           </div>
+          {inactive !== true && selectedGroup === null &&
+            <div className="text-base flex flex-row items-center gap-1">
+              <span>Click on the interactive objects in the drawing to find out more.</span>
+              <div><CursorArrowRaysIcon className="size-7 animate-pulse" /></div>
+            </div>}
           <div className="text-base flex gap-1 flex-col">
             {story.audio &&
               <PaintingAudio src={`/audio/${story.audio}`} />
@@ -282,7 +288,7 @@ function MainMenu() {
                       </div>
                     </button>}
                   <div className="w-full max-h-full flex gap-2 flex-col p-3 px-6">
-                    {renderContent(story, dataView)}
+                    {renderContent(story, dataView, painting.inactive, selectedGroup)}
                   </div>
                 </div>
                 <svg className="size-full absolute top-0 left-0 pointer-events-none">
