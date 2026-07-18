@@ -22,6 +22,7 @@ const noto_serif = Noto_Serif({ weight: "400", subsets: ["latin"] });
 // });
 
 const paintings = [
+  { key: "desk", svgFile: "/images/Generated desktop scene.svg" },
   { key: "start", svgFile: "/images/Title page-1.svg", inactive: true },
   { key: "young", svgFile: "/images/combined_photographs-1.svg" },
   { key: "hjallesevej", svgFile: "/images/3. arrest.svg" },
