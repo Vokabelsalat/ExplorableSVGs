@@ -44,11 +44,19 @@ export function ThumbnailPainting(props: ThumbnailPaintingProps) {
       });
   }, [svgFile, elementID]);
 
+  let borderSyle = "border-3 border-transparent";
+
+  if (discovered) {
+    borderSyle = "border-3 border-gray-400"
+  }
+  if (selectedGroup === elementID) {
+    borderSyle = "border-3 border-gray-600"
+  }
+
   return (
     <div
-      className={`size-12 rounded-full overflow-hidden bg-slate-50 relative cursor-pointer shadow-md items-center ${
-        selectedGroup === elementID || discovered ? "border-3 border-gray-400" : ""
-      }`}
+      className={`size-12 rounded-full overflow-hidden bg-slate-50 relative cursor-pointer shadow-md items-center ${borderSyle
+        } hover:border-gray-500`}
       key={`timeline-sub-entry-${elementID}`}
       onClick={(e) => {
         dispatch(setSelectedGroup(elementID));

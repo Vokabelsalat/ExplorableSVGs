@@ -171,6 +171,19 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
         {paintings.map((e, i) => {
           const story = storyData ? storyData[e.key] ?? null : null;
           const paintingDiscovered = discoveredStoryKeys.includes(e.key);
+          const previousPaintingDiscovered =
+            i < paintings.length - 1 && discoveredStoryKeys.includes(paintings[i + 1].key);
+          const connectingLineDiscovered =
+            paintingDiscovered && previousPaintingDiscovered;
+          let borderStyle = "border-3 border-transparent";
+
+          if (paintingDiscovered) {
+            borderStyle = "border-3 border-gray-400"
+          }
+          if (selectedPainting === i && selectedGroup == null) {
+            borderStyle = "border-3 border-gray-600"
+          }
+
           return (
             <>
               <div
@@ -185,15 +198,12 @@ export function PaintingTimeline(props: PaintingTimelineProps) {
               >
                 <div className="absolute top-0 left-0 w-full h-full flex items-center">
                   <div
-                    className={`h-1 mt-[4px] w-full ${i < selectedPainting ? "bg-gray-400" : "bg-gray-200"
+                    className={`h-1 mt-[4px] w-full ${connectingLineDiscovered ? "bg-gray-400" : "bg-gray-200"
                       }`}
                   ></div>
                 </div>
                 <div
-                  className={`size-18 rounded-full overflow-hidden relative cursor-pointer shadow-md items-center bg-white ${paintingDiscovered || (selectedPainting === i && selectedGroup == null)
-                    ? "border-3 border-gray-400"
-                    : ""
-                    }`}
+                  className={`size-18 rounded-full overflow-hidden relative cursor-pointer shadow-md items-center bg-white ${borderStyle} hover:border-gray-500`}
                   key={`timeline-entry-${i}`}
                   onClick={() => {
                     dispatch(setSelectedGroup(null));
